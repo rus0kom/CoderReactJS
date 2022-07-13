@@ -2,13 +2,20 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap";
 import CartWidget from "./CartWidget";
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import ClickTracker from "./ItemCount";
 
-const NavBar = () => {
+const NavBar = (props) => {
+    const navItems = ["Home", "Products", "Details"];
+    const toUpperNavElements = (text) => {
+      return text.toUpperCase();
+    };
+    const NavItemsStyled = navItems.map((item) => toUpperNavElements(item));
+    console.log(props.children[0]);
+
     return ( 
         <nav className="navbar navbar-expand-lg bg-light">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">Titulo</a>
-    <CartWidget/>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -40,6 +47,8 @@ const NavBar = () => {
         <button className="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
+    {props.CartWidget()}
+    {ClickTracker()}
   </div>
 </nav>
      );

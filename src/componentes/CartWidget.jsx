@@ -1,5 +1,5 @@
 const CartWidget = () => {
-    const amount = 4;
+    const amount = 5;
 
     return (
         <>
