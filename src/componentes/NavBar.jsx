@@ -3,6 +3,7 @@ import "bootstrap";
 import CartWidget from "./CartWidget";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import ClickTracker from "./ItemCount";
+import ItemListContainer from "./ItemListContainer";
 
 const NavBar = (props) => {
     const navItems = ["Home", "Products", "Details"];
@@ -47,10 +48,9 @@ const NavBar = (props) => {
         <button className="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
-    {props.CartWidget()}
-    {ClickTracker()}
   </div>
 </nav>
+
      );
 }
  
