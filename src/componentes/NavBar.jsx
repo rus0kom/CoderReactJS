@@ -5,6 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import ClickTracker from "./ItemCount";
 import ItemListContainer from "./ItemListContainer";
 
+
 const NavBar = (props) => {
     const navItems = ["Home", "Products", "Details"];
     const toUpperNavElements = (text) => {
