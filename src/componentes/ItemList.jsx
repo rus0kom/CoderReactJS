@@ -1,27 +1,18 @@
 import React from "react";
+import Item from "./Item";
 
-
-function ItemList( props ) {
-    console.log("Render ItemsList", props.items);
-
-    return(
-        <>
-        <h1>ItemList</h1>
-        {
-            props.items.map(
-                cadaItem => {
-                    return ( <div key={cadaItem.id}>
-                        <p>{cadaItem.title}</p>
-                        <p>{cadaItem.category}</p>
-                        <p>{cadaItem.price}</p>
-                    </div>
-                    )
-                } 
-             )
-        }
-        
-        </>
+const ItemList = ({ items }) => {
+    return (
+        <div className="container">
+            <div className="row">
+                {items.map((item) => (
+                    <div key={item.id} className="col-sm">
+                        <Item item={item} />
+                        </div>
+                ))}
+            </div>
+        </div>
     );
-}
+};
 
-export default ItemList 
+export default ItemList; 

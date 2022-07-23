@@ -1,5 +1,7 @@
+import ItemCount from "./ItemCount";
+
 const CartWidget = () => {
-    const amount = 5;
+    const amount = 0;
 
     return (
         <>

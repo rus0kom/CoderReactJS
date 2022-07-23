@@ -1,0 +1,81 @@
+[{
+    "id": 1,
+    "title": "Gone Baby Gone",
+    "price": 1478,
+    "category": "Crime|Drama|Mystery",
+    "stock": 81,
+    "pictureUrl": "../img/1.jpg",
+    "description": "Dos detectives de Boston investigan el secuestro de una pequeña que les llevará a una crisis tanto profesional como personal"
+  }, {
+    "id": 2,
+    "title": "Joyriders, The",
+    "price": 1362,
+    "category": "Drama",
+    "stock": 29,
+    "pictureUrl": "../img/2.jpg",
+    "description": "Mientras Kylie, de diez años, lucha por aceptar su dolor, descubre que la imaginación puede ser más poderosa que la realidad."
+  }, {
+    "id": 3,
+    "title": "Return of the Street Fighter (Satsujin ken 2)",
+    "price": 1768,
+    "category": "Action|Crime|Drama",
+    "stock": 73,
+    "pictureUrl": "../img/3.jpg",
+    "description": "El mercenario maestro de kárate Tsurugi se ve envuelto en un complot de la mafia estadounidense para apoderarse de los dojos de kárate en Asia, con la ayuda de un maestro de dojo corrupto."
+  }, {
+    "id": 4,
+    "title": "Jolson Sings Again",
+    "price": 1208,
+    "category": "Musical",
+    "stock": 21,
+    "pictureUrl": "../img/4.jpg",
+    "description": "En esta secuela de The Jolson Story, retomamos la carrera del cantante justo cuando ha regresado a los escenarios tras una prematura jubilación. Pero su esposa lo ha dejado y el atractivo de los reflectores ya no es lo que solía ser."
+  }, {
+    "id": 5,
+    "title": "20 Feet from Stardom (Twenty Feet from Stardom)",
+    "price": 1687,
+    "category": "Documentary",
+    "stock": 16,
+    "pictureUrl": "../img/5.jpg",
+    "description": "Documental sobre el papel de las cantantes de fondo que respaldan el trabajo los grupos más famosos de la música popular, a quienes no conocíamos hasta ahora."
+  }, {
+    "id": 6,
+    "title": "Musa the Warrior (Musa)",
+    "price": 1462,
+    "category": "Action|Adventure|Drama|War",
+    "stock": 57,
+    "pictureUrl": "../img/6.jpg",
+    "description": "1375. Nueve guerreros Koryo, enviados exiliados por la China imperial, luchan para proteger a una princesa china Ming de las tropas mongolas."
+  }, {
+    "id": 7,
+    "title": "Don't Tempt Me (Sin noticias de Dios)",
+    "price": 1850,
+    "category": "Comedy|Fantasy|Mystery",
+    "stock": 88,
+    "pictureUrl": "../img/7.jpg",
+    "description": "Dos ángeles, uno del cielo y otro del infierno, vienen a la tierra para salvar el alma de un boxeador."
+  }, {
+    "id": 8,
+    "title": "Push",
+    "price": 1684,
+    "category": "Sci-Fi|Thriller",
+    "stock": 71,
+    "pictureUrl": "../img/8.jpg",
+    "description": "Dos jóvenes estadounidenses con habilidades especiales deben correr para encontrar a una niña en Hong Kong antes de que lo haga una oscura organización gubernamental llamada División."
+  }, {
+    "id": 9,
+    "title": "World Unseen, The",
+    "price": 1810,
+    "category": "Drama|Romance",
+    "stock": 42,
+    "pictureUrl": "../img/9.jpg",
+    "description": "Un drama centrado en dos mujeres que se involucran en una relación peligrosa durante la era del apartheid en Sudáfrica."
+  }, {
+    "id": 10,
+    "title": "Hobbit, The",
+    "price": 1695,
+    "category": "Animation|Children|Fantasy",
+    "stock": 94,
+    "pictureUrl": "../img/10.jpg",
+    "description": "Un reticente hobbit, Bilbo Bolsón, parte hacia la Montaña Solitaria con un animado grupo de enanos para reclamar su hogar en la montaña, y el oro que contiene, al dragón Smaug."
+  }]

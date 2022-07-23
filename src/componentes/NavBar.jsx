@@ -2,9 +2,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap";
 import CartWidget from "./CartWidget";
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import ClickTracker from "./ItemCount";
-import ItemListContainer from "./ItemListContainer";
-
+import {Link} from 'react-router-dom';
 
 const NavBar = (props) => {
     const navItems = ["Home", "Products", "Details"];
@@ -17,7 +15,9 @@ const NavBar = (props) => {
     return ( 
         <nav className="navbar navbar-expand-lg bg-light">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Titulo</a>
+    <Link className="navbar-brand" to={"/"}>
+    <img src="./img/logo.svg" alt="logo cine" className="w-50"/>
+    </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -31,13 +31,14 @@ const NavBar = (props) => {
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Categorias
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
+            <Link className="dropdown-item" to={"category/Action"}>Accion</Link>
+            <Link className="dropdown-item" to={"category/Drama"}>Drama</Link>
+            <Link className="dropdown-item" to={"category/Musical"}>Musical</Link>
+            <Link className="dropdown-item" to={"category/Documentary"}>Documental</Link>
+            <Link className="dropdown-item" to={"category/Comedy"}>Comedia</Link>
           </ul>
         </li>
         <li className="nav-item">
@@ -49,6 +50,7 @@ const NavBar = (props) => {
         <button className="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
+    <CartWidget/>
   </div>
 </nav>
 

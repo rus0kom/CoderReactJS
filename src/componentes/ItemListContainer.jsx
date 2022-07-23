@@ -1,10 +1,12 @@
 import React from "react";
-import ItemCount from "./ItemCount";
 import data from "../data/ItemsData";
 import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
+import { useParams } from "react-router-dom";
 
 function ItemListContainer(props) {
+    const { name } = useParams();
+    console.log(name)
     const ItemsDATABASE = { data };
     const [items, setItems] = useState([]);
 
@@ -16,21 +18,26 @@ function ItemListContainer(props) {
             let promiseItems = new Promise((resolve, reject) => {
                 setTimeout(
                     () => {
-                        resolve(ItemsDATABASE);     
+                        resolve(data);     
                     },
                     2000);
             });
         
             promiseItems.then(
                 (respuesta)  => {
-                    setItems(ItemsDATABASE);
-                }
+                    const products = respuesta;
+                    if(name) {
+                        setItems(data.filter((product)   => product.category == name));
+                    } else {
+                        setItems(products);
+                    }
+                }, [name]
             ).catch(
                 (errorMsg) => console.error(errorMsg)
             )
         },
         []
-    )
+    );
     
 
 
@@ -40,23 +47,5 @@ return (
 
 
 }
-
-// 1- crear promesa y que retorne los datos
-// 2- guardar en un estado
-// 3- enviarlos a un componente hijo "ItemList"
-
-
-
-// desafio anterior
-
-/* const ItemListContainer = ({ greeting }) => {
-    const onAddItem = (count) => {
-        console.log(typeof count);
-        alert (`${count} items will be added to the cart!`);
-    };
-    return <ItemCount stock={5} initial={1} onAdd={onAddItem}></ItemCount>
-     }; */
-
-
 
 export default ItemListContainer;
